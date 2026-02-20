@@ -26,7 +26,7 @@ The first transcription will download the Whisper base model (~150MB, cached in 
 
 ## Keybindings
 
-This tool works with any Wayland compositor. Below are configuration examples for popular compositors.
+This tool works with any Wayland compositor. Below are configuration examples for popular compositors:
 
 ### Hyprland
 

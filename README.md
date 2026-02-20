@@ -26,12 +26,34 @@ The first transcription will download the Whisper base model (~150MB, cached in 
 
 ## Keybindings
 
-Add to your Hyprland config (`~/.config/hypr/hyprland.conf`):
+This tool works with any Wayland compositor. Below are configuration examples for popular compositors:
+
+### Hyprland
+
+Add to `~/.config/hypr/hyprland.conf`:
 
 ```
 bind = $mainMod, R, exec, voice-to-text
 bind = $mainMod SHIFT, R, exec, voice-to-text --copy
 ```
+
+### Sway
+
+Add to `~/.config/sway/config`:
+
+```
+bindsym $mod+r exec voice-to-text
+bindsym $mod+Shift+r exec voice-to-text --copy
+```
+
+### Other Wayland Compositors
+
+For other compositors (e.g., river, wayfire, labwc), add keybindings that execute:
+
+- `voice-to-text` — Start/stop recording and type transcription
+- `voice-to-text --copy` — Copy last transcription to clipboard
+
+Consult your compositor's documentation for the keybinding syntax.
 
 ## Usage
 
